@@ -3,7 +3,7 @@
 set -e
 trap 'echo ログファイル退避に失敗しました。' ERR
 
-declare CURRENT_DIR=/c/Users/harak/OneDrive/デスクトップ/test
+declare CURRENT_DIR=/usr/ap/bambi/log
 declare logs=(${CURRENT_DIR}/*.log) # 全てのログファイルを配列格納
 
 # ログ退避(ログファイルが存在しない場合はなにもしない)
