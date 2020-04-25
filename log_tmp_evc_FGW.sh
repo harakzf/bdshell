@@ -11,7 +11,8 @@ if [ ${logs} = "/usr/ap/bambi/log/*.log" ]; then
     echo "退避するログファイルはありませんでした。"
     break
 else
-    select data in fais2 docomo eastwest # データ選択
+    # all_Performance_d_ew ：性能試験用関戸さんデータ（ドコモ/東西）
+    select data in fais2 fais5 docomo eastwest all_Performance_d_ew # データ選択
     do #doからdoneまでループ処理
         declare directory=logbk_`date "+%Y%m%d"`_${data}_`date "+%H%M"`
 
